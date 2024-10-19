@@ -1,5 +1,4 @@
 import sys
-argv = sys.argv[1:]
 
 def factorize(num):
     k = 2
@@ -30,6 +29,8 @@ def print_factorization(numbers):
     print()
 
 if __name__ == "__main__":    
+    argv = sys.argv[1:]
+
     for i in range(len(argv)):
         print(f"{argv[i]} = ", end="")
         print_factorization(factorize(int(argv[i])))
